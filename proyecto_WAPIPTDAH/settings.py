@@ -104,7 +104,7 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'wapiptda_db',
+        'NAME': 'railway',
         'USER': 'postgres',
         'PASSWORD': LLAVE_POSTGRESQL,
         'HOST': 'postgresql://postgres:*GbF2fa4Af223cd6ab5*Fa1D3cDcDf3f@postgres.railway.internal:5432/railway', # Para desarrollo
@@ -214,7 +214,7 @@ EMAIL_USE_SSL = False
 
 """ CONFIGURACIÓN PARA LOS CORS HEADERS DE ACCESO DEL FRONTEND """
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
+    "https://react-frontend-production-b574.up.railway.app",
 ]
 
 # DOMINIO   

@@ -107,7 +107,7 @@ DATABASES = {
         'NAME': 'wapiptda_db',
         'USER': 'postgres',
         'PASSWORD': LLAVE_POSTGRESQL,
-        'HOST': 'localhost', # Para desarrollo
+        'HOST': 'postgresql://postgres:*GbF2fa4Af223cd6ab5*Fa1D3cDcDf3f@roundhouse.proxy.rlwy.net:56655/railway', # Para desarrollo
         'PORT': '5432',  # Puerto por defecto de PostgreSQL
     }
 }

@@ -114,9 +114,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': LLAVE_POSTGRESQL,
-        'HOST': 'https://roundhouse.proxy.rlwy.net:56655', # Para desarrollo
-        'PORT': '5432',  # Puerto por defecto de PostgreSQL
+        'PASSWORD': '*GbF2fa4Af223cd6ab5*Fa1D3cDcDf3f',
+        'HOST': 'roundhouse.proxy.rlwy.net',
+        'PORT': '56655',  # Reemplaza con el puerto correcto si es necesario
     }
 }
 

@@ -34,8 +34,11 @@ LLAVE_POSTGRESQL = config('LLAVE_POSTGRESQL')
 DEBUG = True
 
 # ACCESS CONTROL ALLOW ORIGIN
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [*]
 
+ALLOWED_HOSTS = ['*'] 
+ 
+ #ALLOWED_HOSTS = ['proyectofinaldjango.herokuapp.com','mi-primer-app.azurewebsites.net']
 
 # Application definition
 INSTALLED_APPS = [

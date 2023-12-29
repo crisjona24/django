@@ -225,7 +225,7 @@ INSTALLED_APPS = [
     'corsheaders',
 ]
 CORS_ALLOWED_ORIGINS = [
-    "https://react-frontend-production-b574.up.railway.app",
+    "https://react-frontend-production-b574.up.railway.app/*",
 ]
 
 # DOMINIO   

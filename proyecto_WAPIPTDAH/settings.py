@@ -222,6 +222,7 @@ EMAIL_USE_SSL = False
 """ CONFIGURACIÓN PARA LOS CORS HEADERS DE ACCESO DEL FRONTEND """
 INSTALLED_APPS = [
     'corsheaders',
+    'django.contrib.contenttypes',
 ]
 
 MIDDLEWARE = [

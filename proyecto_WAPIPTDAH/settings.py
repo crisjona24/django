@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
-import dj_database_url
+#import dj_database_url
 from decouple import config
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -102,6 +102,7 @@ DATABASES = {
 
 """ CONFIGURACIÓN DE BASE DE DATOS POSTGRESQL """
 
+"""
 DATABASE_URL = os.getenv("DATABASE_URL")
 
 DATABASES = {
@@ -110,15 +111,14 @@ DATABASES = {
 """
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
         'USER': 'postgres',
         'PASSWORD': LLAVE_POSTGRESQL,
-        'HOST': 'postgresql://postgres:*GbF2fa4Af223cd6ab5*Fa1D3cDcDf3f@postgres.railway.internal:5432/railway', # Para desarrollo
+        'HOST': 'https://roundhouse.proxy.rlwy.net:56655', # Para desarrollo
         'PORT': '5432',  # Puerto por defecto de PostgreSQL
     }
 }
-"""
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

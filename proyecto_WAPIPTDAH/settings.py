@@ -36,7 +36,7 @@ DEBUG = True
 # ACCESS CONTROL ALLOW ORIGIN
 
 
-ALLOWED_HOSTS = ['*'] 
+#ALLOWED_HOSTS = ['*'] 
  
  #ALLOWED_HOSTS = ['proyectofinaldjango.herokuapp.com','mi-primer-app.azurewebsites.net']
 
@@ -232,11 +232,12 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-CORS_ORIGIN_WHITELIST = (
+CORS_ALLOW_ALL_ORIGINS = True
 
+CORS_ALLOWED_ORIGINS = [
     "https://react-frontend-production-b574.up.railway.app",
-)
-
+    # Agrega más dominios permitidos aquí si es necesario
+]
 
 # DOMINIO   
 #SITE_URL = "http://aprender-wapiptdah.com"
